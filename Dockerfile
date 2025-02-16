@@ -19,6 +19,8 @@ ENV PATH="/root/.local/bin/:$PATH"
 # Set the working directory
 WORKDIR /app
 
+RUN mkdir -p /data
+
 # Copy the application code
 COPY app.py .
 
